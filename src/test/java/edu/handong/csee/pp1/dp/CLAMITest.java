@@ -82,11 +82,13 @@ public class CLAMITest {
 		
 		// TASK6 TODO Use this method to find the best cutoff for f-measure
 		
-		String bestCutoff = "50";
+		String bestCutoff = "42";  // for문 돌려봤을때 42가 0.7523으로 제일 높
 		
 		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m", "-c", bestCutoff};
 
 		CLAMI.main(args);
+		//System.out.println(i+"번째 ");
+	
 	}
 
 }
